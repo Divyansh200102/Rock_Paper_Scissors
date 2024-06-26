@@ -1,0 +1,108 @@
+*{
+  background-color: #262728;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.container {
+  display: flex;
+  font-style: oblique;
+  font-size: 7vmin;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+.rock, .paper, .scissors{
+  font-size: 5vmin;
+padding: 10px;
+font-weight: 900;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.rock {
+  background: linear-gradient(to right, #ff0180, #93627b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.paper {
+  background: linear-gradient(to right, #02d6ee, #55b1bb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.scissors {
+  background: linear-gradient(to right, #ffff01, #e0e05e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.choices {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   gap:3rem;
+  max-width: 100%; /* Ensuring the choices don't overflow the screen */
+  flex-wrap: wrap;
+  
+  }
+  .choice:hover{
+    cursor: pointer;
+    opacity: .5;
+    transform: scale(1.2);
+  }
+  .choice img {
+    height: 300px;
+    width: auto; 
+    object-fit: cover;
+    border-radius: 30%;
+    border-style: groove;
+  }
+.scoreboard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+gap: 3rem;
+margin-top: 3rem;
+font-size: 2rem;
+color: #dce7e8;
+}
+#user,#comp,#sl{
+  font-size: 3vw;
+  font-style: oblique;
+  text-align: center;
+}
+.mess{
+  text-align: center;
+  color: #021616;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+#mes{
+  padding: .5rem;
+  font-size: 2vw;
+  background-color: #a9c2c5;
+  border-radius: .5rem;
+  display:inline;
+  font-style:oblique;
+  font-weight: 900;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    text-align: center;
+  }
+  
+  .choice img {
+    max-height: 200px; /* Initial height */
+    width: auto; /* Initial width */
+    border-radius: 20%;
+    border-style: groove;
+  }
+.scoreboard {
+     font-size: 3vw;
+    gap: 1rem;
+  }
+  #user,#comp,#sl{
+    font-size: 4vw;
+  }
+  #mes{
+    font-size: 3vw;
+  }
+}
